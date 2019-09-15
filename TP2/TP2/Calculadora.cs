@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TP2
 {
-    class Calculadora
+    public class Calculadora
     {
         private static string validarOperador (string x)
         {
             string retorno;
-            if (x != "+" || x != "-" || x != "*" || x != "/")
+            if (x != "+" && x != "-" && x != "*" && x != "/")
             {
                 retorno = "+";
             }

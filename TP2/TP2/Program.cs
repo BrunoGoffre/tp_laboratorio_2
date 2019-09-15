@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TP2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string num = "10000";
-            Console.WriteLine(Numero.binarioDecimal(num));
-            
+            Console.WriteLine(Calculadora.operar(10, 20, "-"));
             Console.ReadKey();
         }
     }
