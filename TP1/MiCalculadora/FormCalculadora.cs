@@ -7,106 +7,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TP2;
+using TP1;
 
 namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-        public void limpiar()
+        public FormCalculadora()
+        {
+            InitializeComponent();
+            ComboBoxOperadores.Text = ComboBoxOperadores.Items[0].ToString();            
+        }
+
+        public void Limpiar()
         {
             txtBoxNumero1.Clear();
             txtBoxNumero2.Clear();
             label1.Text = "";
             ComboBoxOperadores.Text = "";
         }
-        public FormCalculadora()
+
+        private static double Operar(string numero1, string numero2, string operador)
         {
-            InitializeComponent();
-            ComboBoxOperadores.Enabled = true;
+            return Calculadora.Operar(new Numero(numero1), new Numero(numero2), operador);
         }
 
-        private void btnCerrar_click(object sender, EventArgs e)
+        private void ButtonCerrar_click(object sender, EventArgs e)
         {
             Close();
-        }
+        }        
 
-        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        private void ButtonLimpiar_Click(object sender, EventArgs e)
         {
-
+            Limpiar();
+            btnConvertirDecimalBinario.Enabled = false;
+            btbBinarioDecimal.Enabled = false;
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void ButtonOperar_Click(object sender, EventArgs e)
         {
-            limpiar();
+            label1.Text = Operar(txtBoxNumero1.Text, txtBoxNumero2.Text, ComboBoxOperadores.Text).ToString();
+            btnConvertirDecimalBinario.Enabled = true;
+            btbBinarioDecimal.Enabled = false;                
         }
 
-        private void txtBoxNumero1_leave(object sender, EventArgs e)
-        {
-            double aux;
-            if (!(double.TryParse(txtBoxNumero1.Text, out aux)))
-            {
-                MessageBox.Show("Error. Datos invalidos");
-                txtBoxNumero1.Focus();
-            }
-        }
-
-        private void txtBoxNumero2_Leave(object sender, EventArgs e)
-        {
-            double aux;
-            if (!(double.TryParse(txtBoxNumero2.Text, out aux)))
-            {
-                MessageBox.Show("Error. Datos invalidos");
-                txtBoxNumero2.Focus();
-            }
-        }
-
-        private void btbOperar_Click(object sender, EventArgs e)
-        {
-            double numero1, numero2;
-
-            if (txtBoxNumero1.Text != "" && txtBoxNumero2.Text != "")
-            {
-                double.TryParse(txtBoxNumero1.Text, out numero1);
-                double.TryParse(txtBoxNumero2.Text, out numero2);
-                string auxStr = ComboBoxOperadores.Text;            
-                label1.Text = Calculadora.operar(numero1, numero2,auxStr).ToString();
-            }         
-        }
-
-        private void FormCalculadora_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ComboBoxOperadores_Leave(object sender, EventArgs e)
-        {
-            string aux = ComboBoxOperadores.Text;
-
-            if (aux != "+" && aux != "-" && aux != "/" && aux != "*")
-            {
-                MessageBox.Show("Datos, Invalido");
-                ComboBoxOperadores.Focus();
-            }
-        }
-
-        private void btbBinarioDecimal_Click(object sender, EventArgs e)
+        private void ButtonBinarioDecimal_Click(object sender, EventArgs e)
         {
             if (label1.Text != "")
             {
-                label1.Text = Numero.binarioDecimal(label1.Text);
+                label1.Text = Numero.BinarioDecimal(label1.Text);
+                btbBinarioDecimal.Enabled = false;
+                btnConvertirDecimalBinario.Enabled = true;
             }
         }
 
-        private void btnConvertirDecimalBinario_Click(object sender, EventArgs e)
+        private void ButtonConvertirDecimalBinario_Click(object sender, EventArgs e)
         {
             double aux;
             if (double.TryParse(label1.Text, out aux) && label1.Text != "")
             {
                 aux = Math.Abs(aux);
-                label1.Text = Numero.decimalBinario(aux);
-            }
-                     
+                label1.Text = Numero.DecimalBinario(aux);
+                btbBinarioDecimal.Enabled = true;
+                btnConvertirDecimalBinario.Enabled = false;
+            }                     
         }
     }
 }

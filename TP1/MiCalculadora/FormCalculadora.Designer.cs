@@ -31,7 +31,7 @@
             this.txtBoxNumero1 = new System.Windows.Forms.TextBox();
             this.txtBoxNumero2 = new System.Windows.Forms.TextBox();
             this.ComboBoxOperadores = new System.Windows.Forms.ComboBox();
-            this.btbOperar = new System.Windows.Forms.Button();
+            this.btnOperar = new System.Windows.Forms.Button();
             this.btbBinarioDecimal = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -46,7 +46,6 @@
             this.txtBoxNumero1.Name = "txtBoxNumero1";
             this.txtBoxNumero1.Size = new System.Drawing.Size(173, 45);
             this.txtBoxNumero1.TabIndex = 1;
-            this.txtBoxNumero1.Leave += new System.EventHandler(this.txtBoxNumero1_leave);
             // 
             // txtBoxNumero2
             // 
@@ -55,7 +54,6 @@
             this.txtBoxNumero2.Name = "txtBoxNumero2";
             this.txtBoxNumero2.Size = new System.Drawing.Size(173, 45);
             this.txtBoxNumero2.TabIndex = 3;
-            this.txtBoxNumero2.Leave += new System.EventHandler(this.txtBoxNumero2_Leave);
             // 
             // ComboBoxOperadores
             // 
@@ -70,18 +68,17 @@
             this.ComboBoxOperadores.Name = "ComboBoxOperadores";
             this.ComboBoxOperadores.Size = new System.Drawing.Size(124, 46);
             this.ComboBoxOperadores.TabIndex = 2;
-            this.ComboBoxOperadores.Leave += new System.EventHandler(this.ComboBoxOperadores_Leave);
             // 
-            // btbOperar
+            // btnOperar
             // 
-            this.btbOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbOperar.Location = new System.Drawing.Point(12, 139);
-            this.btbOperar.Name = "btbOperar";
-            this.btbOperar.Size = new System.Drawing.Size(173, 51);
-            this.btbOperar.TabIndex = 4;
-            this.btbOperar.Text = "Operar";
-            this.btbOperar.UseVisualStyleBackColor = true;
-            this.btbOperar.Click += new System.EventHandler(this.btbOperar_Click);
+            this.btnOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOperar.Location = new System.Drawing.Point(12, 139);
+            this.btnOperar.Name = "btnOperar";
+            this.btnOperar.Size = new System.Drawing.Size(173, 51);
+            this.btnOperar.TabIndex = 4;
+            this.btnOperar.Text = "Operar";
+            this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.ButtonOperar_Click);
             // 
             // btbBinarioDecimal
             // 
@@ -92,7 +89,7 @@
             this.btbBinarioDecimal.TabIndex = 7;
             this.btbBinarioDecimal.Text = "Convertir binario a decimal";
             this.btbBinarioDecimal.UseVisualStyleBackColor = true;
-            this.btbBinarioDecimal.Click += new System.EventHandler(this.btbBinarioDecimal_Click);
+            this.btbBinarioDecimal.Click += new System.EventHandler(this.ButtonBinarioDecimal_Click);
             // 
             // btnLimpiar
             // 
@@ -103,7 +100,7 @@
             this.btnLimpiar.TabIndex = 5;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.btnLimpiar.Click += new System.EventHandler(this.ButtonLimpiar_Click);
             // 
             // btnCerrar
             // 
@@ -114,7 +111,7 @@
             this.btnCerrar.TabIndex = 6;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_click);
+            this.btnCerrar.Click += new System.EventHandler(this.ButtonCerrar_click);
             // 
             // btnConvertirDecimalBinario
             // 
@@ -125,7 +122,7 @@
             this.btnConvertirDecimalBinario.TabIndex = 8;
             this.btnConvertirDecimalBinario.Text = "Convertir decimal a binario";
             this.btnConvertirDecimalBinario.UseVisualStyleBackColor = true;
-            this.btnConvertirDecimalBinario.Click += new System.EventHandler(this.btnConvertirDecimalBinario_Click);
+            this.btnConvertirDecimalBinario.Click += new System.EventHandler(this.ButtonConvertirDecimalBinario_Click);
             // 
             // label1
             // 
@@ -146,7 +143,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btbBinarioDecimal);
-            this.Controls.Add(this.btbOperar);
+            this.Controls.Add(this.btnOperar);
             this.Controls.Add(this.ComboBoxOperadores);
             this.Controls.Add(this.txtBoxNumero2);
             this.Controls.Add(this.txtBoxNumero1);
@@ -156,10 +153,8 @@
             this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Bruno Goffredo del curso 2ºC";
-            this.Load += new System.EventHandler(this.FormCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -167,7 +162,7 @@
         private System.Windows.Forms.TextBox txtBoxNumero1;
         private System.Windows.Forms.TextBox txtBoxNumero2;
         private System.Windows.Forms.ComboBox ComboBoxOperadores;
-        private System.Windows.Forms.Button btbOperar;
+        private System.Windows.Forms.Button btnOperar;
         private System.Windows.Forms.Button btbBinarioDecimal;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
