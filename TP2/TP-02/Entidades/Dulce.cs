@@ -8,10 +8,13 @@ namespace Entidades_2018
 {
     public class Dulce : Producto
     {
+        #region Constructores
         public Dulce(EMarca marca, string codigo, ConsoleColor color) : base(codigo,marca,color)
         {
         }
+        #endregion
 
+        #region Propiedades
         /// <summary>
         /// Retorna la cantidad de calorias de un dulce
         /// </summary>
@@ -22,6 +25,9 @@ namespace Entidades_2018
                 return 80;
             }
         }
+        #endregion
+
+        #region Metodos
         /// <summary>
         /// Muestras todos los datos de el dulce incluyendo los de la base
         /// </summary>
@@ -37,5 +43,6 @@ namespace Entidades_2018
 
             return sb.ToString();
         }
+        #endregion
     }
 }

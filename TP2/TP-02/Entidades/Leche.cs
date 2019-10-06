@@ -10,8 +10,9 @@ namespace Entidades_2018
 {
     public class Leche : Producto
     {
-        ETipo tipo;            
+        ETipo tipo;
 
+        #region Contructuros
         /// <summary>
         /// Cargar los atributos de la clase base y los de esta clase
         /// </summary>
@@ -20,7 +21,7 @@ namespace Entidades_2018
         /// <param name="color"></param>
         public Leche(EMarca marca, string codigo, ConsoleColor color, ETipo tipo) : base(codigo, marca, color)
         {
-           this.tipo = tipo;
+            this.tipo = tipo;
         }
         /// <summary>
         /// Cargar los atributos de la clase base y pasa Etipo.entera por defecto
@@ -28,10 +29,13 @@ namespace Entidades_2018
         /// <param name="marca"></param>
         /// <param name="codigo"></param>
         /// <param name="color"></param>
-        public Leche(EMarca marca,string codigo, ConsoleColor color) : this(marca,codigo,color,ETipo.Entera)
+        public Leche(EMarca marca, string codigo, ConsoleColor color) : this(marca, codigo, color, ETipo.Entera)
         {
-            
+
         }
+        #endregion
+
+        #region Propiedades
         /// <summary>
         /// Retorna cantidad de calorias
         /// </summary>
@@ -42,6 +46,9 @@ namespace Entidades_2018
                 return 20;
             }
         }
+        #endregion
+
+        #region Metodos
         /// <summary>
         /// Muestra todos los elementos incluyendo los de la clase base
         /// </summary>
@@ -58,6 +65,7 @@ namespace Entidades_2018
 
             return sb.ToString();
         }
+        #endregion
 
         public enum ETipo
         {

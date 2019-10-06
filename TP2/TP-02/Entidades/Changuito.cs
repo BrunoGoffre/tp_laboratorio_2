@@ -37,7 +37,7 @@ namespace Entidades_2018
         #endregion
 
         #region "Métodos"
-
+       
         /// <summary>
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
         /// SOLO del tipo requerido

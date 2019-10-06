@@ -13,7 +13,9 @@ namespace Entidades_2018
     {
         EMarca marca;
         string codigoDeBarras;
-        ConsoleColor colorPrimarioEmpaque;        
+        ConsoleColor colorPrimarioEmpaque;
+
+        #region Constructores
         /// <summary>
         /// Cargar los atributos
         /// </summary>
@@ -26,6 +28,9 @@ namespace Entidades_2018
             this.codigoDeBarras = codigo;
             this.colorPrimarioEmpaque = color;
         }
+        #endregion
+
+        #region Propiedades
         /// <summary>
         /// ReadOnly: Retornará la cantidad de calorias de el producto
         /// </summary>
@@ -33,6 +38,9 @@ namespace Entidades_2018
         {
             get;
         }
+        #endregion
+
+        #region Metodos
         /// <summary>
         /// Publica todos los datos del Producto.
         /// </summary>
@@ -45,6 +53,9 @@ namespace Entidades_2018
         /// Convierte un elemento tipo producto a un string con sus datos
         /// </summary>
         /// <param name="p"></param>
+        #endregion
+
+        #region Operadores
         public static explicit operator string(Producto p)
         {
             StringBuilder sb = new StringBuilder();
@@ -77,9 +88,8 @@ namespace Entidades_2018
         {
             return !(v1 == v2);
         }
-        /// <summary>
-        /// Enumeracion de marcas
-        /// </summary>
+        #endregion
+
         public enum EMarca
         {
             Serenisima,
