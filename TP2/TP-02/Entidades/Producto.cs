@@ -14,7 +14,12 @@ namespace Entidades_2018
         EMarca marca;
         string codigoDeBarras;
         ConsoleColor colorPrimarioEmpaque;        
-
+        /// <summary>
+        /// Cargar los atributos
+        /// </summary>
+        /// <param name="codigo"></param>
+        /// <param name="marca"></param>
+        /// <param name="color"></param>
         public Producto(string codigo, EMarca marca, ConsoleColor color)
         {
             this.marca = marca;
@@ -22,7 +27,7 @@ namespace Entidades_2018
             this.colorPrimarioEmpaque = color;
         }
         /// <summary>
-        /// ReadOnly: Retornará la cantidad de ruedas del vehículo
+        /// ReadOnly: Retornará la cantidad de calorias de el producto
         /// </summary>
         public short CantidadCalorias
         {
@@ -32,21 +37,24 @@ namespace Entidades_2018
         /// Publica todos los datos del Producto.
         /// </summary>
         /// <returns></returns>
-        public string Mostrar()
+        public virtual string Mostrar()
+        {
+            return (string)this;
+        }
+        /// <summary>
+        /// Convierte un elemento tipo producto a un string con sus datos
+        /// </summary>
+        /// <param name="p"></param>
+        public static explicit operator string(Producto p)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"CODIGO DE BARRAS: {this.codigoDeBarras}\r");
-            sb.AppendLine($"MARCA          : {this.marca.ToString()}\r");
-            sb.AppendLine($"COLOR EMPAQUE  : {this.colorPrimarioEmpaque.ToString()}\r");
+            sb.AppendLine($"CODIGO DE BARRAS: {p.codigoDeBarras}\r");
+            sb.AppendLine($"MARCA          : {p.marca.ToString()}\r");
+            sb.AppendLine($"COLOR EMPAQUE  : {p.colorPrimarioEmpaque.ToString()}\r");
             sb.AppendLine("---------------------");
 
             return sb.ToString();
-        }
-
-        public static explicit operator string(Producto p)
-        {
-            return p.Mostrar();
         }
 
         /// <summary>
@@ -69,7 +77,9 @@ namespace Entidades_2018
         {
             return !(v1 == v2);
         }
-
+        /// <summary>
+        /// Enumeracion de marcas
+        /// </summary>
         public enum EMarca
         {
             Serenisima,

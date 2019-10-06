@@ -12,7 +12,7 @@ namespace Entidades_2018
         {
         }
         /// <summary>
-        /// Los snacks tienen 104 calorías
+        /// Retorna la cantidad de calorias
         /// </summary>
         protected new short CantidadCalorias
         {
@@ -21,8 +21,11 @@ namespace Entidades_2018
                 return 104;
             }
         }
-
-        public new string Mostrar()
+        /// <summary>
+        /// Muestras todos los datos de el dulce incluyendo los de la base
+        /// </summary>
+        /// <returns></returns>
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 

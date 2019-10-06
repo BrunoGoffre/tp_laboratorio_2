@@ -13,22 +13,27 @@ namespace Entidades_2018
         ETipo tipo;            
 
         /// <summary>
-        /// Por defecto, TIPO será ENTERA
+        /// Cargar los atributos de la clase base y los de esta clase
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="codigo"></param>
         /// <param name="color"></param>
-        public Leche(EMarca marca, string codigo, ConsoleColor color) : base(codigo, marca, color)
+        public Leche(EMarca marca, string codigo, ConsoleColor color, ETipo tipo) : base(codigo, marca, color)
         {
-            this.tipo = ETipo.Entera;
+           this.tipo = tipo;
         }
-        public Leche(EMarca marca,string codigo, ConsoleColor color, ETipo tipo) : this(marca,codigo,color)
-        {
-            this.tipo = tipo;
-        }
-
         /// <summary>
-        /// Las leches tienen 20 calorías
+        /// Cargar los atributos de la clase base y pasa Etipo.entera por defecto
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="codigo"></param>
+        /// <param name="color"></param>
+        public Leche(EMarca marca,string codigo, ConsoleColor color) : this(marca,codigo,color,ETipo.Entera)
+        {
+            
+        }
+        /// <summary>
+        /// Retorna cantidad de calorias
         /// </summary>
         protected new short CantidadCalorias
         {
@@ -37,8 +42,11 @@ namespace Entidades_2018
                 return 20;
             }
         }
-
-        public new string Mostrar()
+        /// <summary>
+        /// Muestra todos los elementos incluyendo los de la clase base
+        /// </summary>
+        /// <returns></returns>
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 

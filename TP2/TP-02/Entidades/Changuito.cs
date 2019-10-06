@@ -32,7 +32,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public override string ToString()
         {
-            return this.Mostrar(this, ETipo.Todos);
+            return Mostrar(this, ETipo.Todos);
         }
         #endregion
 
@@ -45,7 +45,7 @@ namespace Entidades_2018
         /// <param name="c">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public string Mostrar(Changuito c, ETipo tipo)
+        public static string Mostrar(Changuito c, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -53,35 +53,32 @@ namespace Entidades_2018
             sb.AppendLine("");
             foreach (Producto v in c.productos)
             {
-               if((tipo == ETipo.Leche || tipo == ETipo.Todos) && v is Leche)
-               {
-                    sb.AppendFormat(((Leche)v).Mostrar());
-               }
-               if((tipo == ETipo.Snacks || tipo == ETipo.Todos) && v is Snacks)
+                switch (tipo)
                 {
-                    sb.AppendFormat(((Snacks)v).Mostrar());
-                }
-               if((tipo == ETipo.Dulce || tipo == ETipo.Todos) && v is Dulce)
-                {
-                    sb.AppendFormat(((Dulce)v).Mostrar());
+                    case ETipo.Snacks:
+                        if (v is Snacks)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }                        
+                        break;
+                    case ETipo.Dulce:
+                        if (v is Dulce)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }                        
+                        break;
+                    case ETipo.Leche:
+                        if (v is Leche)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
+                        break;
+                    default:
+                        sb.AppendLine(v.Mostrar());
+                        break;
                 }
             }
 
-                //switch (tipo)
-                //{
-                //    case ETipo.Snacks:
-                //        sb.AppendLine(v.ToString());
-                //        break;
-                //    case ETipo.Dulce:
-                //        sb.AppendLine(v.ToString());
-                //        break;
-                //    case ETipo.Leche:
-                //        sb.AppendLine(v.ToString());
-                //        break;
-                //    default:
-                //        sb.AppendLine(v.ToString());
-                //        break;
-                //}
 
             return sb.ToString();
         }
@@ -101,7 +98,7 @@ namespace Entidades_2018
                 if (v == p || c.espacioDisponible == c.productos.Count)
                 {
                     return c;
-                }                    
+                }
             }
             c.productos.Add(p);
             return c;
@@ -114,7 +111,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator -(Changuito c, Producto p)
         {
-            foreach  (Producto v in c.productos)
+            foreach (Producto v in c.productos)
             {
                 if (v == p)
                 {

@@ -13,7 +13,7 @@ namespace Entidades_2018
         }
 
         /// <summary>
-        /// Los dulces tienen 80 calorías
+        /// Retorna la cantidad de calorias de un dulce
         /// </summary>
         protected new short CantidadCalorias
         {
@@ -22,8 +22,11 @@ namespace Entidades_2018
                 return 80;
             }
         }
-
-        public new string Mostrar()
+        /// <summary>
+        /// Muestras todos los datos de el dulce incluyendo los de la base
+        /// </summary>
+        /// <returns></returns>
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
