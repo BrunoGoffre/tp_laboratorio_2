@@ -1,0 +1,9 @@
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\muchas clases\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\bin\Debug\muchas clases.dll
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\bin\Debug\muchas clases.pdb
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\bin\Debug\Exepciones.dll
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\bin\Debug\Exepciones.pdb
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\obj\Debug\muchas clases.dll
+D:\Facultad\Programacion-II\Tps\TP3\Clases Abstractas\obj\Debug\muchas clases.pdb

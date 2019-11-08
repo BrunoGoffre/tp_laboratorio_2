@@ -1,0 +1,5 @@
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\Exepciones\bin\Debug\Exepciones.dll
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\Exepciones\bin\Debug\Exepciones.pdb
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\Exepciones\obj\Debug\Exepciones.csprojAssemblyReference.cache
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\Exepciones\obj\Debug\Exepciones.dll
+D:\Facultad\Nueva carpeta\Programacion-II\Tps\TP3\Exepciones\obj\Debug\Exepciones.pdb

@@ -1,0 +1,8 @@
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\bin\Debug\Archivos.dll
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\bin\Debug\Archivos.pdb
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\bin\Debug\Exepciones.dll
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\bin\Debug\Exepciones.pdb
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\obj\Debug\Archivos.dll
+D:\Facultad\Programacion-II\Tps\TP3\Archivos\obj\Debug\Archivos.pdb
