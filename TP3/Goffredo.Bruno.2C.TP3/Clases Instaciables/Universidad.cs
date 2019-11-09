@@ -15,7 +15,9 @@ namespace Clases_Instaciables
         List<Profesor> profesores;
 
         #region Constructores
-
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Universidad()
         {
             this.alumnos = new List<Alumno>();
@@ -26,6 +28,9 @@ namespace Clases_Instaciables
 
         #region Propiedades
 
+        /// <summary>
+        /// Retorno y setea el atributo alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -38,6 +43,9 @@ namespace Clases_Instaciables
             }
 
         }
+        /// <summary>
+        /// Retorno y setea el atributo jornada
+        /// </summary>
         public List<Jornada> Jornada
         {
             get
@@ -49,6 +57,9 @@ namespace Clases_Instaciables
                 this.jornada = value;
             }
         }
+        /// <summary>
+        /// Retorno y setea el atributo profesores
+        /// </summary>
         public List<Profesor> Profesores
         {
             get
@@ -60,6 +71,11 @@ namespace Clases_Instaciables
                 this.profesores = value;
             }
         }
+        /// <summary>
+        /// Indexa la clase utilizando jornada
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public Jornada this[int i]
         {
             get
@@ -75,6 +91,12 @@ namespace Clases_Instaciables
 
         #region Sobrecarga de operadores
 
+        /// <summary>
+        /// Consulta si el alumno esta en la universidad
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Universidad g, Alumno a)
         {
             foreach (Alumno item in g.Alumnos)
@@ -86,10 +108,22 @@ namespace Clases_Instaciables
             }
             return false;
         }
+        /// <summary>
+        /// Consulta si el alumno esta en la universidad
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad g, Alumno a)
         {
             return !(g == a);
         }
+        /// <summary>
+        /// Consulta si el profesor esta en la universidad
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static bool operator ==(Universidad g, Profesor i)
         {
             foreach (Profesor item in g.Profesores)
@@ -101,10 +135,22 @@ namespace Clases_Instaciables
             }
             return false;
         }
+        /// <summary>
+        /// Compara universidad con profesor
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad g, Profesor i)
         {
             return !(g == i);
         }
+        /// <summary>
+        /// Retorna el profesor que da la clase
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator ==(Universidad u, Universidad.EClases clase)
         {
             foreach (Profesor item in u.Profesores)
@@ -116,6 +162,12 @@ namespace Clases_Instaciables
             }
             throw new SinProfesorException();
         }
+        /// <summary>
+        /// Consulta el primer profesor que no la clase que viene por parametro
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator !=(Universidad u, Universidad.EClases clase)
         {
             foreach (Profesor item in u.Profesores)
@@ -127,6 +179,12 @@ namespace Clases_Instaciables
             }
             return null;
         }
+        /// <summary>
+        /// Agregar un profesor a la universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Profesor i)
         {
             if (u != i)
@@ -135,6 +193,12 @@ namespace Clases_Instaciables
             }
                 return u;
         }
+        /// <summary>
+        /// Agrega un alumno a la universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
             if (!(u.Alumnos.Contains(a)))
@@ -147,6 +211,12 @@ namespace Clases_Instaciables
             }
             return u;
         }
+        /// <summary>
+        /// Agrega una jornada con la clase que viene por paramentro a la universidad
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, EClases clase)
         {
             Profesor profe = (g == clase);

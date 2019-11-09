@@ -25,7 +25,10 @@ namespace Clases_Instaciables
             clasesDelDia = new Queue<Universidad.EClases>();
             _randomClases();
         }
-
+        /// <summary>
+        /// Muestra todos los datos de la clase
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -35,7 +38,10 @@ namespace Clases_Instaciables
 
             return sb.ToString();
         }
-
+        /// <summary>
+        /// Muestras las clases que tiene en el atributo clasesDelDia
+        /// </summary>
+        /// <returns></returns>
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
@@ -47,7 +53,9 @@ namespace Clases_Instaciables
             }
             return sb.ToString();
         }
-
+        /// <summary>
+        /// Asigna dos clases random a la cola de profesor
+        /// </summary>
         private void _randomClases()
         {
             this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
@@ -55,6 +63,12 @@ namespace Clases_Instaciables
             this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
         }
 
+        /// <summary>
+        /// Compara igualdad entre profesor y Universidad.clase
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
             foreach (Universidad.EClases item in i.clasesDelDia)
@@ -66,10 +80,20 @@ namespace Clases_Instaciables
             }
             return false;
         }
+        /// <summary>
+        /// Compara igualdad entre profesor y Universidad.clase
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {
             return !(i == clase);
         }
+        /// <summary>
+        /// Muestra todos los datos de la clase
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.MostrarDatos();

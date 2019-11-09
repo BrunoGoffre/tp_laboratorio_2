@@ -11,6 +11,12 @@ namespace Archivos
 {
     public class Xml<T> : IArchivos<T>
     {
+        /// <summary>
+        /// Guarda los datos en un archivo XML
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T dato)
         {
             try
@@ -29,6 +35,12 @@ namespace Archivos
             }
         }
 
+        /// <summary>
+        /// Lee los datos de un archivo XML
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out T dato)
         {
             try

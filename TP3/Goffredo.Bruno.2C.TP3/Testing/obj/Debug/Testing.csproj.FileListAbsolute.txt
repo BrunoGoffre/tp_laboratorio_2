@@ -1,0 +1,24 @@
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Testing.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Testing.pdb
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\obj\Debug\Testing.csprojAssemblyReference.cache
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\obj\Debug\Testing.csproj.CopyComplete
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\obj\Debug\Testing.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\obj\Debug\Testing.pdb
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Archivos.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Clases Instaciables.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Exepciones.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\muchas clases.dll
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Archivos.pdb
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\muchas clases.pdb
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Clases Instaciables.pdb
+D:\Facultad\tp_laboratorio_2\TP3\Goffredo.Bruno.2C.TP3\Testing\bin\Debug\Exepciones.pdb
