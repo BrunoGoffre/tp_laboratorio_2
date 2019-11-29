@@ -41,7 +41,7 @@ namespace Entidades
             string retorno = string.Empty;
             foreach (Paquete p in ((Correo)elementos).Paquetes)
             {
-                retorno += $"{p.TrackingID} para {p.DireccionEntrega} ({p.Estado.ToString()})";
+                retorno += $"{p.TrackingID} para {p.DireccionEntrega} ({p.Estado.ToString()})\n";
             }
             return retorno;
         }

@@ -23,7 +23,7 @@ namespace Entidades
 
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
-            return string.Format("{0} para {1}",((Paquete)elemento).TrackingID, ((Paquete)elemento).DireccionEntrega);
+            return string.Format("{0} para {1}\n",((Paquete)elemento).TrackingID, ((Paquete)elemento).DireccionEntrega);
         }
 
         public string DireccionEntrega
