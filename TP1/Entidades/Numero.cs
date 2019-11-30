@@ -11,15 +11,25 @@ namespace TP1
         private double numero;
 
         #region Constructores
-
+        /// <summary>
+        /// Establece el campo numero por defecto 0,ç
+        /// </summary>
         public Numero()
         {
             this.numero = 0;
         }
+        /// <summary>
+        /// Asigna el campo numero con el calor ingresado
+        /// </summary>
+        /// <param name="dato"></param>
         public Numero(double dato)
         {
             this.numero = dato;
         }
+        /// <summary>
+        /// Asigna el campo numero validando que el string ingresado sea un numero
+        /// </summary>
+        /// <param name="dato"></param>
         public Numero(string dato)
         {
             this.SetNumero = dato;
@@ -28,22 +38,42 @@ namespace TP1
         #endregion
 
         #region Operadores
-
+        /// <summary>
+        /// Retorna la suma de dos objetos de tipo numero
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator +(Numero a, Numero b)
         {
             return a.numero + b.numero;
         }
-
+        /// <summary>
+        /// Retorna la resta de dos objetos de tipo numero
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator -(Numero a, Numero b)
         {
             return a.numero - b.numero;
         }
-
+        /// <summary>
+        /// Retorna la multiplicacion de dos objetos de tipo numero
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator *(Numero a, Numero b)
         {
             return a.numero * b.numero;
         }
-
+        /// <summary>
+        /// Retorna la divicion de dos objetos de tipo numero
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator /(Numero a, Numero b)
         {
             double retorno = 0;
@@ -61,7 +91,11 @@ namespace TP1
         #endregion
         
         #region Convercion
-
+        /// <summary>
+        /// Convierte un numero numero binario en su equivalente decimal
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns></returns>
         public static string BinarioDecimal(string strNumero)
         {
             int numero = 0;
@@ -84,6 +118,11 @@ namespace TP1
             }
             return numero.ToString();
         }
+        /// <summary>
+        /// Convierte un numero decimal en su equivalente binario, en formato de string
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns></returns>
         public static string DecimalBinario(string strNumero)
         {
             double aux;
@@ -91,7 +130,7 @@ namespace TP1
 
             if (double.TryParse(strNumero, out aux))
             {
-                retorno = DecimalBinario(aux);
+                retorno = Numero.DecimalBinario(aux);
             }
             else
             {
@@ -99,7 +138,11 @@ namespace TP1
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Convierte un numero decimal en su equivalente binario, en formato de double
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns></returns>
         public static string DecimalBinario(double numero)
         {
             string retorno = string.Empty;
@@ -117,9 +160,7 @@ namespace TP1
                 aux = aux / 2;
             } while (aux >= 1);
             return retorno;
-
         }
-
         #endregion
 
         /// <summary>
@@ -129,7 +170,7 @@ namespace TP1
         {
             set
             {
-                this.numero = ValidarNumero(value);
+                this.numero = this.ValidarNumero(value);
             }
         }
 

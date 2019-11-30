@@ -15,18 +15,16 @@ namespace TP1
         /// <+></returns> Operador en x
         private static string ValidarOperador (string x)
         {
-            string retorno;
             if (x != "+" && x != "-" && x != "*" && x != "/")
             {
-                retorno = "+";
+                return "+";
             }
             else
             {
-                retorno = x;
+                return x;
             }
-            return retorno;
-        }
 
+        }
         /// <summary>
         /// Opera dos objetos de tipo Numero con el operador recibido
         /// </summary>
@@ -37,26 +35,23 @@ namespace TP1
         public static double Operar(Numero numero1,Numero numero2 , string operador)
         {
             string auxOperador;
-            double retorno;
             auxOperador = Calculadora.ValidarOperador(operador);            
             if (auxOperador == "+")
             {
-                retorno = numero1 + numero2;
+                return numero1 + numero2;
             }
             else if (auxOperador == "-")
             {
-                retorno = numero1 - numero2;
+                return numero1 - numero2;
             }
             else if (auxOperador == "/")
             {
-                retorno = numero1 / numero2;
+                return numero1 / numero2;
             }
             else
             {
-                retorno = numero1 * numero2;
+                return numero1 * numero2;
             }
-
-            return retorno;
         }
     }
 }
