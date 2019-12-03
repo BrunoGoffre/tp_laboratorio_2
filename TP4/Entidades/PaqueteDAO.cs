@@ -3,46 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Sql;
 using System.Data.SqlClient;
 
 namespace Entidades
 {
     public static class PaqueteDAO
     {
-        static SqlConnection conexion;
-        static SqlCommand comando;
-
+        public delegate void DelegadoPaqueteDAO(string mensaje);
+        static SqlConnection connection;
+        static SqlCommand command;
+        public static event DelegadoPaqueteDAO EventoDAO;
+        /// <summary>
+        /// Establece la conexcion con la base de datos
+        /// </summary>
         static PaqueteDAO()
         {
-            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog =correo-sp-2017; Integrated Security = True";
+            string connectionStr = "Data Source=.\\SQLEXPRESS;Initial Catalog=correo-sp-2017; Integrated Security=True";
 
-            PaqueteDAO.conexion = new SqlConnection(connectionString);
-            PaqueteDAO.comando = new SqlCommand();
-            PaqueteDAO.comando.CommandType = System.Data.CommandType.Text;
-            PaqueteDAO.comando.Connection = PaqueteDAO.conexion;
+            PaqueteDAO.connection = new SqlConnection(connectionStr);
+            PaqueteDAO.command = new SqlCommand();
+
+            PaqueteDAO.command.CommandType = System.Data.CommandType.Text;
+            PaqueteDAO.command.Connection = PaqueteDAO.connection;
         }
+        /// <summary>
+        /// Abre la conexion con la base de datos y la completa con los datos actuales
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
             try
             {
-                string consulta = $"INSERT INTO dbo.Paquetes(direccionEntrega, trackingID, alumno) VALUES('{p.DireccionEntrega}', '{p.TrackingID}', 'Alejandro Frank')";
-                comando.CommandText = consulta;
-                conexion.Open();
-                comando.ExecuteNonQuery();
-            }
-            catch (NullReferenceException ex)
-            {
-                throw ex;
+                string consulta = $"INSERT INTO dbo.Paquetes(direccionEntrega, trackingID, alumno) VALUES('{p.DireccionEntrega}', '{p.TrackingID}', 'Goffredo Bruno')";
+                PaqueteDAO.command.CommandText = consulta;
+                PaqueteDAO.connection.Open();
+                PaqueteDAO.command.ExecuteNonQuery();
+                return true;
             }
             catch (Exception ex)
             {
-                throw ex;
+                PaqueteDAO.EventoDAO.Invoke("No se pudo realizar la consulta");
+                return false;
             }
             finally
             {
-                conexion.Close();
+                PaqueteDAO.connection.Close();
             }
-            return true;
         }
+        
     }
 }

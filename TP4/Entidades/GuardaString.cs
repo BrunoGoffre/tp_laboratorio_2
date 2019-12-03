@@ -7,24 +7,29 @@ using System.IO;
 
 namespace Entidades
 {
-   public static class GuardaString
+    public static class GuardaString
     {
-        public static bool Guardar(this string texto, string archivo)
+        /// <summary>
+        /// Guarda el texto recibido en un archivo de texto en el escritorio
+        /// </summary>
+        /// <param name="texto"></param>
+        /// <param name="archivo"></param>
+        /// <returns></returns>
+        public static bool Guardar(this String texto, string archivo)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + archivo;
-
             try
             {
-                using (StreamWriter sw = new StreamWriter(path, true))
+                using (StreamWriter writer = new StreamWriter(path))
                 {
-                    sw.WriteLine(texto);
+                    writer.WriteLine(texto);
                 }
-                return true;
             }
             catch(FileNotFoundException ex)
             {
                 throw ex;
             }
+            return true;
         }
     }
 }

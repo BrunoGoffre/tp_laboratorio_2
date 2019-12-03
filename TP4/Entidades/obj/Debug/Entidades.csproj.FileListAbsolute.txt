@@ -1,10 +1,10 @@
-D:\Facultad\tp_laboratorio_2\TP4\TP4\bin\Debug\TP4.dll
-D:\Facultad\tp_laboratorio_2\TP4\TP4\bin\Debug\TP4.pdb
-D:\Facultad\tp_laboratorio_2\TP4\TP4\obj\Debug\Entidades.csprojAssemblyReference.cache
-D:\Facultad\tp_laboratorio_2\TP4\TP4\obj\Debug\TP4.dll
-D:\Facultad\tp_laboratorio_2\TP4\TP4\obj\Debug\TP4.pdb
-D:\Facultad\tp_laboratorio_2\TP4\Entidades\bin\Debug\TP4.dll
-D:\Facultad\tp_laboratorio_2\TP4\Entidades\bin\Debug\TP4.pdb
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Entidades\bin\Debug\Entidades.dll
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Entidades\bin\Debug\Entidades.pdb
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Entidades\obj\Debug\Entidades.dll
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Entidades\obj\Debug\Entidades.pdb
+D:\Facultad\tp_laboratorio_2\TP4\Entidades\bin\Debug\Entidades.dll
+D:\Facultad\tp_laboratorio_2\TP4\Entidades\bin\Debug\Entidades.pdb
 D:\Facultad\tp_laboratorio_2\TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-D:\Facultad\tp_laboratorio_2\TP4\Entidades\obj\Debug\TP4.dll
-D:\Facultad\tp_laboratorio_2\TP4\Entidades\obj\Debug\TP4.pdb
+D:\Facultad\tp_laboratorio_2\TP4\Entidades\obj\Debug\Entidades.dll
+D:\Facultad\tp_laboratorio_2\TP4\Entidades\obj\Debug\Entidades.pdb
