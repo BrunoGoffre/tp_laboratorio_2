@@ -1,0 +1,39 @@
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\MiCalculadora.exe
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\MiCalculadora.pdb
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.exe
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.pdb
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\TP2.exe
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\TP2.pdb
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\bin\Debug\TP2.exe.config
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+D:\La facu\tp_laboratorio_2\TP2\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.pdb
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.dll
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.pdb
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.exe
+D:\La facu\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.pdb
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.pdb
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.dll
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.pdb
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.exe
+D:\Facultad\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.pdb

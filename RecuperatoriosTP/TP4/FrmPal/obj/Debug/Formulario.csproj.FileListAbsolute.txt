@@ -1,0 +1,24 @@
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\bin\Debug\Practica de tp4.exe.config
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\bin\Debug\Practica de tp4.exe
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\bin\Debug\Practica de tp4.pdb
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\bin\Debug\Entidades.dll
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\bin\Debug\Entidades.pdb
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Formulario.csprojAssemblyReference.cache
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Practica_de_tp4.Form1.resources
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Practica_de_tp4.Properties.Resources.resources
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Formulario.csproj.GenerateResource.cache
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Formulario.csproj.CopyComplete
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Practica de tp4.exe
+D:\Facultad\Programacion-II\Practticas\Practica de tp4\Practica de tp4\obj\Debug\Practica de tp4.pdb
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\bin\Debug\Practica de tp4.exe.config
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\bin\Debug\Practica de tp4.exe
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\bin\Debug\Practica de tp4.pdb
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\bin\Debug\Entidades.dll
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\bin\Debug\Entidades.pdb
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Formulario.csprojAssemblyReference.cache
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Practica_de_tp4.Form1.resources
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Practica_de_tp4.Properties.Resources.resources
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Formulario.csproj.GenerateResource.cache
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Formulario.csproj.CopyComplete
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Practica de tp4.exe
+D:\Facultad\tp_laboratorio_2\TP4\FrmPal\obj\Debug\Practica de tp4.pdb
